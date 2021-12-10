@@ -83,6 +83,7 @@ h5{
 }
 #nav{
     background-image: url(../img/nav-bg.png);
+    background-color: #151514;
     background-position-y: bottom;
     background-position-x: left;
     background-size: cover;
@@ -149,6 +150,7 @@ a.language span:nth-child(2){
 /*--- OUR PORPOSE ---*/
 .our-purpose{
     background-image: url(../img/bg/bg1.png);
+    background-color: #171716;
     background-repeat: no-repeat;
     background-position-y: bottom;
     color: white;
@@ -156,6 +158,7 @@ a.language span:nth-child(2){
 /*--- COIN AND NEWS ---*/
 .coin_and_news{
     background-image: url(../img/bg/bg2.png);
+    background-color: #0f200f;
     background-repeat: no-repeat;
     background-position-y: bottom;
     color: white;
@@ -227,10 +230,16 @@ section.news .carousel-continer .prev>img{
     width: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.modal-news{
+    background-image: url(../img/bg/bg4.png);
+    background-color: #171716;
+}
+
 
 /*--- CONTACT US ---*/
 .contact{
-    background-image: url(../img/bg/bg4.png);
+    background-image: url(../img/bg/bg3.png);
+    background-color: #1b1b1a;
     background-repeat: no-repeat;
     background-size: cover;
     color: white !important;
