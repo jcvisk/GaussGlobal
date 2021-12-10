@@ -84,3 +84,13 @@ function active5(){
 
     }
 }
+
+
+//Asignando dominio a metaTags
+var dominio = $(location).attr('hostname');
+$('#metatagUrlFacebook').attr('content', dominio)
+$('#metatagUrlTwitter').attr('content', dominio)
+//Asignando direccion de favicon a metaTags
+dominio+="/favivon.png"
+$('#metatagFaviconFacebook').attr('content', dominio)
+$('#metatagFaviconTwitter').attr('content', dominio)

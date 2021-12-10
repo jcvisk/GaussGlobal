@@ -37,22 +37,67 @@ h2{
 h5{
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
 }
-.glass{
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 var(--verde);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    transition: ease 1s;
+/*---generales--*/
+.divider{
+    border: 3px solid var(--verde);
+    background-color: var(--verde);
+    width: 20%;
 }
-.bg-transparent{
-    transition: ease 1s;
+.container-fluid {
+    padding-right: 7% !important;
+    padding-left: 7% !important;
 }
+.mt-15{
+    margin-top: 16.5%;
+}
+.py-10{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.txt {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.section{
+    position: relative;
+    display: block;
+}
+.content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---- NAVBAR ----*/
 .navbar-light .navbar-toggler-icon {
     background-image: url(../img/toggler-icon.svg);
 }
 .navbar-toggler {
     border: none !important;
 }
+#nav{
+    background-image: url(../img/nav-bg.png);
+    background-position-y: bottom;
+    background-position-x: left;
+    background-size: cover;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: "lato-black";
+    color: white !important;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color: var(--verde) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--verde) !important;
+}
+
 a.login{
     font-family: "lato-black";
     color: white;
@@ -74,94 +119,6 @@ a.language span:nth-child(2){
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.divider{
-    border: 3px solid var(--verde);
-    background-color: var(--verde);
-    width: 20%;
-}
-.container-fluid {
-    padding-right: 7% !important;
-    padding-left: 7% !important;
-}
-.bg-green{
-    background-color: var(--verde);
-}
-.mt-10{
-    margin-top: 10%;
-}
-.mt-15{
-    margin-top: 16.5%;
-}
-.mt-20{
-    margin-top: 20%;
-}
-
-.my-10{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-.my-15{
-    margin-top: 16.5%;
-    margin-bottom: 16.5%;
-}
-.my-20{
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-
-.pt-10{
-    padding-top: 10%;
-}
-.pt-15{
-    padding-top: 16.5%;
-}
-.pt-20{
-    padding-top: 20%;
-}
-
-.py-10{
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-.py-15{
-    padding-top: 16.5%;
-    padding-bottom: 16.5%;
-}
-.py-20{
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-
-
-.section{
-    position: relative;
-    display: block;
-}
-.content{
-    position: absolute;
-    top:50%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    
-}
-.content1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.content p{
-    color: white !important;
-    font-weight: 900 !important;
-}
-.content2{
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .img-rps {
     width: calc(100px + (250 - 100) * ((100vw - 300px) / (1600 - 300)));
     transition: ease 1s;
@@ -170,44 +127,42 @@ a.language span:nth-child(2){
     width: calc(75px + (200 - 75) * ((100vw - 300px) / (1600 - 300)));
     transition: ease 1s;
 }
-.arrow_down {
-    width: calc(15px + (40 - 15) * ((100vw - 300px) / (1600 - 300)));
-    transition: ease 1s;
+/*---- CAROUSEL ----*/
+.carousel h2{
+    font-size: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
-.txt {
-    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+.carousel-caption {
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
 }
-#nav{
-    background-image: url(../img/nav-bg.png);
-    background-position-y: bottom;
-    background-position-x: left;
-    background-size: cover;
-}
-.navbar-light .navbar-nav .nav-link {
-    font-family: "lato-black";
-    color: white !important;
-}
-.navbar-light .navbar-nav .active>.nav-link {
-    color: var(--verde) !important;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--verde) !important;
+.text-green{
+    color: var(--verde);
 }
 
 /*--- OUR PORPOSE ---*/
 .our-purpose{
     background-image: url(../img/bg/bg1.png);
     background-repeat: no-repeat;
+    background-position-y: bottom;
+    color: white;
+}
+/*--- COIN AND NEWS ---*/
+.coin_and_news{
+    background-image: url(../img/bg/bg2.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     color: white;
 }
 
 /*--- NEWS ---*/
-.news{
-    background-image: url(../img/bg/bg3.png);
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: center;
-}
+
 .btn-new{
     border-radius: 0 !important;
     border: 4px solid white;
@@ -250,35 +205,22 @@ a.language span:nth-child(2){
     letter-spacing: normal;
 }
 
-.news h5{
-    letter-spacing: normal;
-}
-.news small{
-    font-family: "lato-black";
-    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.news .card{
-    width: 65%
-}
-
 
 section.news .carousel-continer{
     position: relative;
 }
-section.news .carousel-continer .next{
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    z-index: 100;
-    cursor: pointer;
-}
+section.news .carousel-continer .next,
 section.news .carousel-continer .prev{
     position: absolute;
     top: 50%;
-    left: 30px;
     z-index: 100;
     cursor: pointer;
+}
+section.news .carousel-continer .next{
+    right: 30px;
+}
+section.news .carousel-continer .prev{
+    left: 30px;
 }
 section.news .carousel-continer .next>img,
 section.news .carousel-continer .prev>img{
@@ -315,57 +257,6 @@ section.news .carousel-continer .prev>img{
     color: white;
 }
 
-
-
-@media (min-width: 576px) {
-    ._p-5 {
-        padding: 3rem !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .content{
-        position: absolute;
-        top:50%;
-        left: 52%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-    .news{
-        background-image: url(../img/bg/bg3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-}
-
-@media (min-width: 992px) {
-    .content{
-        position: absolute;
-        top:50%;
-        left: 51%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-
-    .our-purpose{
-        background-image: url(../img/bg/bg1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-    }
-}
-
-@media (min-width: 1200px) {
-    .content{
-        position: absolute;
-        top:50%;
-        left: 50.9%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-}
-
 @media (max-width: 991.98px){
     nav .container-fluid {
         padding-right: 0% !important;
@@ -373,6 +264,30 @@ section.news .carousel-continer .prev>img{
     }
 }
 
-@media (max-width: 767px) {
-    
+@media (min-width: 768px) {
+    .carousel-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 45%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-caption {
+        position: absolute;
+        right: 10%;
+        bottom: 50%;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
 }
