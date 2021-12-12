@@ -19,10 +19,13 @@ $(".js-video-button").modalVideo({
 /* Inicializando WOW */
 new WOW().init();
 
+/* FECHA DINAMICA PARA EL COPYRIGHT */
 copyright = new Date();
 update = copyright.getFullYear();
 document.getElementById('year').innerHTML = update;
 
+
+/* JS PARA QUE AGREGUE LA CLASE ACTIVE DINAMICAMENTE */
 $('#item1').click(active1);
 $('#item2').click(active2);
 $('#item3').click(active3);
@@ -85,7 +88,7 @@ function active5(){
     }
 }
 
-
+/* JS PARA QUE LOS METATAGAS SEAN DIANMICOS*/
 //Asignando dominio a metaTags
 var dominio = $(location).attr('hostname');
 $('#metatagUrlFacebook').attr('content', dominio)
@@ -94,3 +97,51 @@ $('#metatagUrlTwitter').attr('content', dominio)
 dominio+="/favivon.png"
 $('#metatagFaviconFacebook').attr('content', dominio)
 $('#metatagFaviconTwitter').attr('content', dominio)
+
+
+/* JS PARA EL CAROSUEL DE SLICK */
+$('.slick-center').slick({
+    autoplay: true,
+    autoplaySpeed: 1000,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    arrows: true,
+    nextArrow: $('.next'),
+    prevArrow: $('.prev'),
+    responsive: [
+        {
+            /* de 480 para abajo */
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+        {
+            /* de 967 hacia abajo */
+            breakpoint: 967,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            /* de 3000 hacia abajo */
+            breakpoint: 3000,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
+});
+
+
+/*MODAL VIDEO DENTRO DEL CAROUSEL */
+$('#newModal4x').click(function () {
+    var src = 'https://www.youtube.com/embed/Ei8AKs2lbsg';
+    $('#newModal4 iframe').attr('src', src);
+});
+
+$('#newModal4').on('hidden.bs.modal', function (event) {
+    $('#newModal4 iframe').attr('src', null);
+})

@@ -454,11 +454,10 @@
                                     </a>
                                 </div>
                                 <div class="text-center col-12">
-                                    <a href="#" target="_blank" class="js-video-button" data-video-id='Ei8AKs2lbsg'>
-                                        <img src="img/news/new4.png" class="img-fluid wow animate__animated animate__pulse animate__repeat-3" alt="bg-video">
+                                    <a href="" data-toggle="modal" data-target="#newModal4" id="newModal4x">
+                                        <img src="img/news/new4.png" alt="product" class="img-fluid wow animate__animated animate__pulse animate__repeat-3">
                                     </a>
                                 </div>
-                                
                             </div>
                         </div>
 
@@ -628,6 +627,28 @@
                             </div>
                         </div>
                     </div>
+                    <!-- New 4 -->
+                    <div class="col-12 col-sm-4 text-center py-3 py-sm-0">
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="newModal4" tabindex="-1" aria-labelledby="newModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content modal-news">
+                                    <div class="p-3">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-0 text-white">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ei8AKs2lbsg" allowfullscreen></iframe>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
@@ -683,46 +704,11 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/modalvideo/jquery-modal-video.min.js"></script>
     <script src="assets/plugins/animate/wow.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
     <script src="js/submitToAPI.js"></script>
     <script src="js/front.js"></script>
 
-    <script>
-        $('.slick-center').slick({
-            autoplay: true,
-            autoplaySpeed: 1000,
-            infinite: true,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            arrows: true,
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
-            responsive: [
-                {
-                    /* de 480 para abajo */
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                },
-                {
-                    /* de 967 hacia abajo */
-                    breakpoint: 967,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    /* de 3000 hacia abajo */
-                    breakpoint: 3000,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                }
-            ]
-        });
-    </script>
+    
 </body>
 
 </html>
